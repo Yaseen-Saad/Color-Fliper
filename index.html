@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Flipper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Color Flipper</h1>
+    <p>Click the button to change the background color!</p>
+    <button onclick="changeColor()">Flip Color</button>
+    
+    <div class="color-info">
+      <div id="color-code">#FFFFFF</div>
+      <div id="rgb-code">RGB: (255, 255, 255)</div>
+      <button onclick="copyColorCode()" class="copy-btn">Copy Color Code</button>
+      <button onclick="saveFavoriteColor()" class="fav-btn">Save Favorite</button>
+    </div>
+
+    <h2>Color History</h2>
+    <div class="color-history" id="color-history"></div>
+
+    <h2>Favorite Colors</h2>
+    <div class="favorite-colors" id="favorite-colors"></div>
+
+    <h2>Complementary Color</h2>
+    <div class="complementary-color" id="complementary-color"></div>
+
+    <label>
+      <input type="checkbox" id="auto-flip" onclick="toggleAutoFlip()"> Enable Auto Flip
+    </label>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
